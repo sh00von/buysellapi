@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors'); // Import CORS
 const connectDB = require('./lib/dbConnect'); // Database connection
 
+const adminRouter = require('./admin'); // Import AdminJS router
 const app = express();
 
 // Connect to MongoDB
