@@ -8,13 +8,21 @@
     ],
     "routes": [
       {
-        "src": "/admin/(.*)",
-        "dest": "/api/admin"
+        "src": "/api/(.*)",
+        "dest": "/api/$1.js"
       },
       {
-        "src": "/api/(.*)",
-        "dest": "/api/$1"
+        "src": "/admin",
+        "dest": "/admin.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.js"
       }
-    ]
+    ],
+    "env": {
+      "MONGODB_URI": "@mongodb-uri",
+      "PORT": "3000"
+    }
   }
   
