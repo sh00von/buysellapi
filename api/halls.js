@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Use the hall routes
-app.use('/api/halls', hallRoutes);
+app.use('/api/hall', hallRoutes);
 
 module.exports = (req, res) => {
   app(req, res);
