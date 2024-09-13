@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use('/admin', adminRouter); // AdminJS routes, mounted at "/admin"
 
 // Define routes
-const hallRoutes = require('./routes/halls');
+const hallRoutes = require('./routes/hall');
 const singleTokenRoutes = require('./routes/singleTokens');
 // const multipleTokenRoutes = require('./routes/multipleTokens');
 const requestRoutes = require('./routes/requests');
